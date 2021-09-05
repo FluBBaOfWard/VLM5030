@@ -1,0 +1,10 @@
+VLM5030 revision history
+-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+
+V1.0.0 - 2018-06-19 (FluBBa)
+	Now works on the NDS.
+
+V0.0.0 - 2018-05-14 (FluBBa)
+	Started porting.
+

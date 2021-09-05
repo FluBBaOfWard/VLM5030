@@ -1,0 +1,6 @@
+VLM5030 To do
+-------------
+
+	Check to make sure it sounds as in MAME.
+	Convert to ARM assembler.
+
