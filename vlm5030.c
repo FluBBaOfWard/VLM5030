@@ -74,6 +74,8 @@
  
  */
 #include <nds.h>
+#include <stdlib.h>
+#include <string.h>
 #include "vlm5030.h"
 
 /* interpolator per frame   */
