@@ -78,6 +78,8 @@
 #include <string.h>
 #include "vlm5030.h"
 
+bool vlm5030ClockNoise(void);
+
 /* interpolator per frame   */
 #define FR_SIZE 4
 /* samples per interpolator */
@@ -522,8 +524,7 @@ void vlm5030_update_callback(struct vlm5030_info *chip, short *buffer, int lengt
 			}
 			else if ( chip->old_pitch <= 1 ) {
 				/* generate unvoiced samples here */
-				current_val = getRandomNumber(1) ? chip->current_energy : -chip->current_energy;
-//				current_val = (mame_rand(Machine)&1) ? chip->current_energy : -chip->current_energy;
+				current_val = vlm5030ClockNoise() ? chip->current_energy : -chip->current_energy;
 			}
 			else {
 				/* generate voiced samples here */
