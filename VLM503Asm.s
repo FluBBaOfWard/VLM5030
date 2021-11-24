@@ -10,7 +10,11 @@
 	.syntax unified
 	.arm
 
+#ifdef ARM9
 	.section .itcm
+#else
+	.section .text
+#endif
 	.align 2
 ;@----------------------------------------------------------------------------
 vlm5030ClockNoise:
